@@ -23,7 +23,7 @@ if st.button('Compare Teams'):
     filtered_data = pbp[pbp['posteam'].isin([team1, team2])]
     
     # Generate the scatter plot
-    fig = ggscatter('air_yards', 'yards_after_catch', filtered_data, hue='posteam', reference='Fit')
+    fig = ggscatter('air_yards', 'yards_after_catch', filtered_data, hue='posteam', reference='Avgs')
 
     # Display the plot
     st.pyplot(fig)

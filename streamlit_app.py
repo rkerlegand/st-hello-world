@@ -3,9 +3,6 @@ from plot import ggscatter
 import pandas as pd
 import nfl_data_py as nfl
 
-# Set page config
-st.set_page_config(page_title="Air Yards vs Yards After Catch", page_icon=":football:", theme="light")
-
 #Import data
 
 pbp = nfl.import_pbp_data([2023])

@@ -28,6 +28,8 @@ plt.rcParams['figure.dpi'] = 300
 
 def ggscatter(x, y, data, title=None, xlabel=None, ylabel=None, label_col=None, color=None, hue=None, reference=None):
 
+    fig, ax = plt.subplots()
+
     # Set custom color palette
     sns.set_palette(ggpalette)
 
@@ -84,5 +86,5 @@ def ggscatter(x, y, data, title=None, xlabel=None, ylabel=None, label_col=None, 
     if reference is not None:
         ax.legend()
 
-    # Show the plot
-    plt.show()
+    # Return the plot
+    return fig
